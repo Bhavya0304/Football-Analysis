@@ -1,0 +1,1 @@
+This folder will hold cache detections from YOLO model so that model does not predict complete detections everytime
