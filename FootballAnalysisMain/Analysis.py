@@ -2,9 +2,10 @@ from Detection import detection
 import pickle
 
 class Analysis:
-    def __init__(self,file,getFromCache = None):
+    def __init__(self,file,modelPath = None,getFromCache = None):
         self.filePath = file
         self.model = detection
+        self.modelPath = modelPath
         if(getFromCache == None):
             self.fromcache = False
         else:
@@ -29,9 +30,9 @@ class Analysis:
             if(result[0]):
                 self.detections = result[1]
             else:
-                self.detections = self.model.DetectObjects(self.filePath)     
+                self.detections = self.model.DetectObjects(self.filePath,modelPath=self.modelPath)     
             self.SaveDetections()
         else:
-            self.detections = self.model.DetectObjects(self.filePath)
+            self.detections = self.model.DetectObjects(self.filePath,self.modelPath)
         
         return self.detections

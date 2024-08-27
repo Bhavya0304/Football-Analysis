@@ -1,3 +1,4 @@
 cache/detections.pkl
 yolov8x.pt
 runs/
+TrainedModel/YOLOv8.pt

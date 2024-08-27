@@ -1,0 +1,3 @@
+this folder conatins trained model to use that is fine tuned using Roboflow and google collab
+
+you can find collab in CollabForTraining folder
