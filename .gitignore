@@ -2,3 +2,6 @@ cache/detections.pkl
 yolov8x.pt
 runs/
 TrainedModel/YOLOv8.pt
+__pycache__/
+*.py[cod]
+output/output.mp4

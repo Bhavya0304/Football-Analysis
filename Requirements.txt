@@ -6,4 +6,4 @@ matplotlib
 ultralytics
 torch
 torchvision
-pickle5
+supervision
